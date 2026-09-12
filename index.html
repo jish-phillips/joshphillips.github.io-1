@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Phillips — Stanford University</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fbfbfb;
+            color: #222222;
+            line-height: 1.6;
+            margin: 0;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 0 0 8px 0;
+        }
+
+        .affiliation {
+            font-size: 1.05rem;
+            color: #555555;
+            margin-bottom: 25px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a.tab-link {
+            color: #222222;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed transparent;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        nav a.tab-link:hover {
+            border-bottom-color: #8c1515; /* Stanford Cardinal Red */
+            color: #8c1515;
+        }
+
+        /* Active navigation visual indicator */
+        nav a.active-tab {
+            color: #8c1515;
+            border-bottom: 1px solid #8c1515;
+        }
+
+        .cv-link-wrapper {
+            text-decoration: none;
+        }
+
+        .cv-link-wrapper:hover {
+            text-decoration: underline;
+        }
+
+        .cv-link svg {
+            margin-right: 5px;
+            fill: currentColor;
+        }
+
+        /* Core Layout: About is visible, others hidden on startup */
+        section {
+            display: none;
+            margin-bottom: 50px;
+        }
+
+        section#about {
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 6px;
+            margin-bottom: 25px;
+            color: #555555;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        a.inline-link {
+            color: #8c1515;
+            text-decoration: none;
+        }
+        
+        a.inline-link:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 24px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .item-meta {
+            font-size: 0.95rem;
+            color: #555555;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .item-links a {
+            font-size: 0.85rem;
+            color: #8c1515;
+            text-decoration: none;
+            margin-right: 12px;
+            font-weight: 500;
+        }
+
+        .item-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links a {
+            color: #8c1515;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 80px;
+            font-size: 0.85rem;
+            color: #555555;
+            border-top: 1px solid #eaeaea;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Josh Phillips</h1>
+        <div class="affiliation"> Lecturer | Department of Linguistics, Stanford University</div>
+        <nav id="mainNav">
+            <!-- Using data attributes for structured targeting -->
+            <a class="tab-link active-tab" data-target="about">about</a>
+            <a class="tab-link" data-target="research">research</a>
+            <a class="tab-link" data-target="teaching">teaching</a>
+            
+            <a href="https://www.dropbox.com/scl/fi/ginwtulqjzgqil0xkn7co/CV-academic-JP.pdf?rlkey=dlgfi9leam6j3sstp433xkgov&dl=0" class="cv-link-wrapper" target="_blank" style="color: #8c1515; display: inline-flex; align-items: center; font-weight: 500;">
+                <span class="cv-link" style="display: inline-flex; align-items: center;">
+                    <svg width="14" height="16" viewBox="0 0 384 512" aria-hidden="true">
+                        <path d="M0 64C0 28.7 28.7 0 64 0H224L384 160V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm256 0V160H384L256 64zM64 224c-8.8 0-16 7.2-16 16v24c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H64zm0 96c-8.8 0-16 7.2-16 16v24c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V336c0-8.8-7.2-16-16-16H64zm0 96c-8.8 0-16 7.2-16 16v24c0 8.8 7.2 16 16 16H224c8.8 0 16-7.2 16-16V432c0-8.8-7.2-16-16-16H64z"/>
+                    </svg>
+                </span>CV (PDF)
+            </a>
+        </nav>
+    </header>
+
+ <section id="about">
+        <h2>About</h2>
+        <div class="bio-wrapper">
+            <div class="bio-text">
+                <p>
+                    I’m a lecturer in the <a href="https://stanford.edu" target="_blank" class="inline-link">Department of Linguistics at Stanford University</a>. 
+                    My research primarily investigates the semantics and pragmatics of time and possibility expressions—intensional categories such as tense, modality, aspect, and negation. 
+                    I’m particularly interested in how the linguistic encoding of these concepts varies across language communities and evolves over time.
+                </p>
+                <p>
+                    A core pillar of my research program explores linguistic variation and universals within the "irreality" domain—the mechanisms human languages utilize to describe hypothetical and counterfactual situations. 
+                    My current book project centers on providing an intensive account of the structure, development, and variation of the verbal paradigm in Yolŋu Matha, a language family spoken in Northern Australia.
+                </p>
+            </div>
+            
+            <div class="profile-pic-container">
+                <!-- Swap profile_picture.jpg with your photo's filename -->
+                <img src="images/me.jpeg" alt="Josh Phillips portrait" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Selected Publications</h2>
+        <ul>
+            <li>
+                <span class="item-title">Syntagmatic and Paradigmatic Changes in Meaning</span>
+                <span class="item-meta">Josh Phillips & Martín Fuchs. <em>The Wiley Blackwell Companion to Diachronic and Historical Linguistics</em>.</span>
+                <div class="item-links">
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/9781119898023.wbcdl139">[chapter]</a>
+                
+                </div>
+            </li>
+            <li>
+                <span class="item-title">Negation, (non)realisation and the Djambarrpuyŋu irrealis</span>
+                <span class="item-meta">Josh Phillips (2026). <em>Faits de Langues</em>.</span>
+                <div class="item-links">
+                    <a href="https://brill.com/abstract/journals/fdl/54/2/article-p63_006.xml">[paper]</a>
+               
+                </div>
+            </li>
+            <li>
+		    <span class="item-title">On the emergence of an aspectual NPI: comparative polysemy and the case of Diyari <i>marla</i></span>
+                <span class="item-meta">Josh Phillips, Will Wegner, & Claire Bowern (2024). <em>Semantics and Linguistic Theory (SALT)</em>.</span>
+                <div class="item-links">
+                    <a href="https://doi.org/10.3765/f2rq0k90">[paper]</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+            <h2 style="margin-top: 40px;">Teaching 2026/2027</h2>
+        <ul>
+            <li>
+                <span class="item-title">LINGUIST 230B: Advanced Semantics</span>
+                <span class="item-meta">Department of Linguistics, Stanford University.</span>
+            </li>
+	     <li>
+                <span class="item-title">LINGUIST 230C: Topics in Semantics & Pragmatics: Modality</span>
+                <span class="item-meta">Department of Linguistics, Stanford University.</span>
+            </li>
+
+	    
+            <li>
+                <span class="item-title">LINGUIST 160: Historical Linguistics</span>
+                <span class="item-meta">Department of Linguistics, Stanford University.</span>
+            </li>
+	     <li>
+                <span class="item-title">LINGUIST 163: Linguistic Diversity & Language Endangerment</span>
+                <span class="item-meta">Department of Linguistics, Stanford University.</span>
+            </li>
+	      <li>
+                <span class="item-title">LINGUIST 263: Field Methods (2-course sequence)</span>
+                <span class="item-meta">Department of Linguistics, Stanford University.</span>
+            </li>
+
+
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact & Profiles</h2>
+        <p><strong>Email:</strong> joshphillips [at] stanford [dot] edu</p>
+        <p><strong>Office:</strong> Department of Linguistics, Stanford University, CA 94305</p>
+        <div class="social-links" style="margin-top: 15px;">
+            <a href="https://scholar.google.com/citations?user=UPfgXPoAAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Josh-Phillips-2" target="_blank">ResearchGate</a>
+            <a href="https://stanford.edu" target="_blank">Stanford Profile</a>
+        </div>
+        <p style="margin-top: 50px; font-size: 0.85rem; color: #555555; border-top: 1px solid #eaeaea; padding-top: 25px;">
+            &copy; 2026 Josh Phillips. Handcrafted using type-centric minimal layouts.
+        </p>
+    </footer>
+
+</div>
+
+<script>
+    // Pure, context-isolated event script
+    document.querySelectorAll('.tab-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+		// 1. Instantly hide all section containers via manual override
+		document.querySelectorAll('section').forEach(sec => {sec.style.display = 'none';});
+		// 2. Bring the selected target section context into view
+		document.getElementById(targetId).style.display = 'block';
+		// 3. Clear styling from previous layout tab selections
+		document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active-tab'));
+		// 4. Highlight the current option as chosen
+		this.classList.add('active-tab');});});
+</script>
+            
+
